@@ -1,0 +1,33 @@
+/* Apply styling for the Ticket component */
+/* Use your preferred layout and design elements here */
+.Ticket {
+    background-color: #ffffff;
+    border: 1px solid #d1d1d1;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 12px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    cursor: pointer;
+  }
+  
+  .Ticket:hover {
+    transform: translateY(-4px);
+  }
+  
+  .ticket-title {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  
+  .ticket-status,
+  .ticket-user,
+  .ticket-priority {
+    font-size: 14px;
+    color: #555555;
+    margin: 4px 0;
+  }
+  
+  /* Add more styling as needed */
+  
+  

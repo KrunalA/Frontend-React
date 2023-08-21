@@ -1,0 +1,16 @@
+/* Apply styling for the KanbanBoard component */
+/* Use your preferred layout and design elements here */
+.KanbanBoard {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .ticket-group {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  /* Add more styling as needed */
+  
+  

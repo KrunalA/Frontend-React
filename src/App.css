@@ -1,38 +1,97 @@
+/* App.css */
 .App {
   text-align: center;
+  padding: 20px;
+  background-color: #a6ecf8;
+  font-family: 'Helvetica Neue', sans-serif;
+  color: #333333;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.controls {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.select12 {
+  margin: 0 10px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  background-color: #ff0000;
   color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
-.App-link {
-  color: #61dafb;
+.select12:hover {
+  background-color: #ff3f3f;
+  transform: scale(1.05);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.kanban-board {
+  display: flex;
+  gap: 30px;
+  justify-content: space-around;
+  animation: fadeInUp 0.8s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
+}
+
+.group {
+  flex: 1;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+}
+
+.group:hover {
+  box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+.group h2 {
+  margin: 0;
+  padding-bottom: 15px;
+  font-size: 22px;
+  color: #444444;
+}
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid #fac986;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #555555;
+}
+
+.card p {
+  margin: 8px 0;
+  font-size: 16px;
+  color: #777777;
 }
